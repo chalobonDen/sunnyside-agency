@@ -237,6 +237,31 @@ p {
   background-position: 10%;
 }
 
+/* Footer Component */
+footer {
+  background-color: hsl(169, 43%, 70%);
+  width: 100%;
+}
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+footer > .footer-content > div {
+  margin: 10px;
+}
+footer > .footer-content > div > span {
+  color: #2c7566;
+  margin: 0 20px;
+}
+footer > .footer-content > div > img {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 2rem;
+}
+
 /* Responsive */
 @media (min-width: 1024px) {
   /* Header */
