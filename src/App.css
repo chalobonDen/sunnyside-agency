@@ -268,12 +268,23 @@ p {
   .gallery {
     flex-wrap: wrap;
   }
+  .milkbottles {
+    background-image: url('./images/mobile/image-gallery-milkbottles.jpg');
+  }
+  .orange {
+    background-image: url('./images/mobile/image-gallery-orange.jpg');
+  }
+  .cone {
+    background-image: url('./images/mobile/image-gallery-cone.jpg');
+  }
+  .sugarcubes {
+    background-image: url('./images/mobile/image-gallery-sugar-cubes.jpg');
+  }
   .milkbottles,
   .orange,
   .cone,
   .sugarcubes {
     width: 50%;
     height: 23.2vh;
-    background-position: 0 30%;
   }
 }
