@@ -169,7 +169,7 @@ p {
   margin-top: 30px;
 }
 
-/* Gallery */
+/* Gallery Component */
 .gallery {
   display: flex;
   flex-direction: row;
@@ -262,5 +262,18 @@ p {
   .text-img {
     position: relative;
     padding: 0 20px;
+  }
+
+  /* Gallery Component */
+  .gallery {
+    flex-wrap: wrap;
+  }
+  .milkbottles,
+  .orange,
+  .cone,
+  .sugarcubes {
+    width: 50%;
+    height: 23.2vh;
+    background-position: 0 30%;
   }
 }
