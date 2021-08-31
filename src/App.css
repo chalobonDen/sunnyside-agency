@@ -59,7 +59,7 @@ header > p {
 
 .burger {
   z-index: 100;
-  position: fixed;
+  position: absolute;
   top: 0px;
   right: 0px;
   left: 0px;
@@ -79,41 +79,10 @@ header > p {
   color: white;
 }
 
-@media (min-width: 1024px) {
-  .burger {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  header > p {
-    font-size: 2.5rem;
-  }
-  .menu-container {
-    visibility: hidden;
-  }
-}
-@media only screen and (max-width: 800px) {
-  header > p {
-    font-size: 2.2rem;
-    top: 25%;
-    text-align: center;
-  }
-  .header-img {
-    background-image: url('./images/mobile/image-header.jpg');
-    width: 100vw;
-    height: 60vh;
-  }
-  .arrow {
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    top: 60%;
-    transform: translate(-50%, -50%);
-  }
-}
-
 /* Content Component */
-.content {
+.content,
+.content-transform,
+.content-stand-out {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -136,8 +105,6 @@ header > p {
   text-transform: uppercase;
   font-family: 'Fraunces', serif;
   font-weight: 700;
-  /* text-decoration: underline;
-  text-decoration-color: hsl(51, 100%, 49%); */
   border-bottom: 4px solid hsl(51, 100%, 49%);
 }
 .image-transform {
@@ -200,4 +167,100 @@ p {
 }
 .text-img > p {
   margin-top: 30px;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-direction: row;
+}
+.milkbottles {
+  background-image: url('./images/desktop/image-gallery-milkbottles.jpg');
+}
+.orange {
+  background-image: url('./images/desktop/image-gallery-orange.jpg');
+}
+.cone {
+  background-image: url('./images/desktop/image-gallery-cone.jpg');
+}
+.sugarcubes {
+  background-image: url('./images/desktop/image-gallery-sugarcubes.jpg');
+}
+.milkbottles,
+.orange,
+.cone,
+.sugarcubes {
+  width: 50%;
+  height: 65vh;
+  background-size: cover;
+  background-position: 10%;
+}
+
+/* Responsive */
+@media (min-width: 1024px) {
+  /* Header */
+  .burger {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* Header */
+  header > p {
+    font-size: 2.5rem;
+  }
+  .menu-container {
+    visibility: hidden;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* Header */
+  header > p {
+    font-size: 2.2rem;
+    top: 25%;
+    text-align: center;
+  }
+  .header-img {
+    background-image: url('./images/mobile/image-header.jpg');
+    width: 100vw;
+    height: 60vh;
+  }
+  .arrow {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  /* Content Component */
+  .content-transform {
+    flex-direction: column-reverse;
+  }
+  .content-stand-out,
+  .content {
+    flex-direction: column;
+  }
+  .image-transform,
+  .image-stand-out {
+    width: 100%;
+    height: 40vh;
+  }
+  .detail {
+    width: 70%;
+    padding: 0;
+    /* height: 40vh; */
+    margin: 50px;
+    text-align: center;
+  }
+  .image-graphic-design,
+  .image-photography {
+    width: 100%;
+    height: 80vh;
+  }
+  .text-img {
+    position: relative;
+    padding: 0 20px;
+  }
 }

@@ -3,7 +3,7 @@ import React from 'react';
 const Content = () => {
   return (
     <div>
-      <div className="content">
+      <div className="content-transform">
         <div className="detail">
           <b>Transform your brand</b>
           <p>
@@ -16,7 +16,7 @@ const Content = () => {
         <div className="image-transform"></div>
       </div>
 
-      <div className="content">
+      <div className="content-stand-out">
         <div className="image-stand-out"></div>
         <div className="detail">
           <b>Stand out to the right audience</b>
@@ -30,15 +30,6 @@ const Content = () => {
       </div>
 
       <div className="content">
-        {/* <div className="detail">
-          <b>Transform your brand</b>
-          <p>
-            We are a full-service creative agency specializing in helping brands
-            grow fast. Engage your clients through compelling visuals that do
-            most of the marketing for you.
-          </p>
-          <span className="learnmore-yellow">Learn more</span>
-        </div> */}
         <div className="image-graphic-design">
           <div className="text-img">
             <b>Graphic design</b>

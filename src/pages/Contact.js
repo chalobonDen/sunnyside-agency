@@ -1,14 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Content from '../components/Content';
+import Gallery from '../components/Gallery';
+
 const Contact = (props) => {
   return (
     <div>
       <Content />
+      <Gallery />
     </div>
   );
 };
-
-Contact.propTypes = {};
 
 export default Contact;
