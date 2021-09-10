@@ -99,7 +99,7 @@ const Navbar = (props) => {
 
       <div className="burger">
         <button onClick={navToggler}>
-          <FaBars />
+          <FaBars style={{ width: '1.5rem', height: '1.5rem' }} />
         </button>
       </div>
 
